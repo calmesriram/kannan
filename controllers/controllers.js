@@ -47,7 +47,8 @@ var csv = require('fast-csv');
         schema.create(authors, function(err, documents) {
 			if (err) throw err;
 			
-			res.send(authors.length + ' authors have been successfully uploaded.');
+            res.send(authors.length + ' authors have been successfully uploaded.');
+            res.end()
 		 });
 	 });
         
